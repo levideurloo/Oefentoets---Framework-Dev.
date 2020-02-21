@@ -1,0 +1,27 @@
+/*
+ * Customize the looks of the app.
+ *
+ * See for examples: https://versions.bulma.io/0.7.0/documentation/overview/customize/
+ */
+// Import the initial variables
+@import "~bulma/sass/utilities/initial-variables";
+@import "~bulma/sass/utilities/functions";
+
+// Colors
+// Define pink and its inverse
+$pink: #ffb3b3;
+$pink-invert: #fff;
+
+// Use the new pink as the primary color
+$primary: $pink;
+$primary-invert: $pink-invert;
+// Use the existing orange as the danger color
+$danger: $orange;
+
+// Typography
+@import url('https://fonts.googleapis.com/css?family=Cormorant+SC&display=swap');
+$family-serif: "Cormorant SC", "Georgia", serif;
+$family-primary: $family-serif;
+
+// Finally import the rest of the derived variables
+@import "~bulma/sass/utilities/derived-variables";
